@@ -7,10 +7,14 @@ phpunit.xml
 uploads
 upgrade
 cache
-plugins
+payload
+dist
+db.php
+
+# Ignore all files and directories in the plugins directory
+plugins/*
 
 # Project Files
-dist
 backstop_data
 
 # Editors
@@ -24,6 +28,7 @@ Session.vim
 *.swp
 .vscode/launch.json
 tasks.json
+.phpcs.xml.dist
 
 # Mac OSX
 .DS_Store
@@ -35,3 +40,10 @@ tasks.json
 Thumbs.db
 Desktop.ini
 /debug.log
+
+themes/*/.nvmrc
+themes/*/.npmrc
+
+# Dev & Tests
+sandbox
+
