@@ -45,7 +45,7 @@ function setup() {
 function i18n() {
 	$locale = apply_filters( 'plugin_locale', get_locale(), 'fbv2-plugin' );
 	load_textdomain( 'fbv2-plugin', WP_LANG_DIR . '/fbv2-plugin/fbv2-plugin-' . $locale . '.mo' );
-	load_plugin_textdomain( 'fbv2-plugin', false, plugin_basename( TENUP_PLUGIN_PATH ) . '/languages/' );
+	load_plugin_textdomain( 'fbv2-plugin', false, plugin_basename( FBV2_PLUGIN_PATH ) . '/languages/' );
 }
 
 /**
@@ -57,13 +57,13 @@ function init() {
 	do_action( 'fbv2_plugin_before_init' );
 
 	// If the composer.json isn't found, trigger a warning.
-	if ( ! file_exists( TENUP_PLUGIN_PATH . 'composer.json' ) ) {
+	if ( ! file_exists( FBV2_PLUGIN_PATH . 'composer.json' ) ) {
 		add_action(
 			'admin_notices',
 			function () {
 				$class = 'notice notice-error';
 				/* translators: %s: the path to the plugin */
-				$message = sprintf( __( 'The composer.json file was not found within %s. No classes will be loaded.', 'fbv2-plugin' ), TENUP_PLUGIN_PATH );
+				$message = sprintf( __( 'The composer.json file was not found within %s. No classes will be loaded.', 'fbv2-plugin' ), FBV2_PLUGIN_PATH );
 
 				printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) );
 			}
@@ -120,7 +120,7 @@ function script_url( $script, $context ) {
 		return new WP_Error( 'invalid_enqueue_context', 'Invalid $context specified in Fbv2Plugin script loader.' );
 	}
 
-	return TENUP_PLUGIN_URL . "dist/js/{$script}.js";
+	return FBV2_PLUGIN_URL . "dist/js/{$script}.js";
 }
 
 /**
@@ -137,7 +137,7 @@ function style_url( $stylesheet, $context ) {
 		return new WP_Error( 'invalid_enqueue_context', 'Invalid $context specified in Fbv2Plugin stylesheet loader.' );
 	}
 
-	return TENUP_PLUGIN_URL . "dist/css/{$stylesheet}.css";
+	return FBV2_PLUGIN_URL . "dist/css/{$stylesheet}.css";
 }
 
 /**
@@ -252,7 +252,7 @@ function mce_css( $stylesheets ) {
 		$stylesheets .= ',';
 	}
 
-	return $stylesheets . TENUP_PLUGIN_URL . ( ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ?
+	return $stylesheets . FBV2_PLUGIN_URL . ( ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ?
 			'assets/css/frontend/editor-style.css' :
 			'dist/css/editor-style.min.css' );
 }
