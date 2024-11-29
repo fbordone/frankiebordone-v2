@@ -16,4 +16,4 @@
  * @package           Fbv2Plugin
  */
 
-require_once __DIR__ . '/10up-plugin/plugin.php';
+require_once __DIR__ . '/fbv2-plugin/plugin.php';
