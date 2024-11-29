@@ -21,10 +21,10 @@ namespace Fbv2Theme\Utility;
  * @return string|array
  */
 function get_asset_info( $slug, $attribute = null ) {
-	if ( file_exists( TENUP_THEME_PATH . 'dist/js/' . $slug . '.asset.php' ) ) {
-		$asset = require TENUP_THEME_PATH . 'dist/js/' . $slug . '.asset.php';
-	} elseif ( file_exists( TENUP_THEME_PATH . 'dist/css/' . $slug . '.asset.php' ) ) {
-		$asset = require TENUP_THEME_PATH . 'dist/css/' . $slug . '.asset.php';
+	if ( file_exists( FBV2_THEME_PATH . 'dist/js/' . $slug . '.asset.php' ) ) {
+		$asset = require FBV2_THEME_PATH . 'dist/js/' . $slug . '.asset.php';
+	} elseif ( file_exists( FBV2_THEME_PATH . 'dist/css/' . $slug . '.asset.php' ) ) {
+		$asset = require FBV2_THEME_PATH . 'dist/css/' . $slug . '.asset.php';
 	} else {
 		return null;
 	}

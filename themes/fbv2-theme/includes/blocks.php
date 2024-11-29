@@ -32,8 +32,8 @@ function setup() {
  */
 function register_theme_blocks() {
 	// Register all the blocks in the theme
-	if ( file_exists( TENUP_THEME_BLOCK_DIST_DIR ) ) {
-		$block_json_files = glob( TENUP_THEME_BLOCK_DIST_DIR . '*/block.json' );
+	if ( file_exists( FBV2_THEME_BLOCK_DIST_DIR ) ) {
+		$block_json_files = glob( FBV2_THEME_BLOCK_DIST_DIR . '*/block.json' );
 
 		// auto register all blocks that were found.
 		foreach ( $block_json_files as $filename ) {
@@ -71,7 +71,7 @@ function register_theme_blocks() {
 function blocks_editor_styles() {
 	wp_enqueue_style(
 		'editor-style-overrides',
-		TENUP_THEME_TEMPLATE_URL . '/dist/css/editor-style-overrides.css',
+		FBV2_THEME_TEMPLATE_URL . '/dist/css/editor-style-overrides.css',
 		[],
 		Utility\get_asset_info( 'editor-style-overrides', 'version' )
 	);
@@ -79,7 +79,7 @@ function blocks_editor_styles() {
 	if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
 		wp_enqueue_script(
 			'editor-style-overrides',
-			TENUP_THEME_TEMPLATE_URL . '/dist/js/editor-style-overrides.js',
+			FBV2_THEME_TEMPLATE_URL . '/dist/js/editor-style-overrides.js',
 			Utility\get_asset_info( 'editor-style-overrides', 'dependencies' ),
 			Utility\get_asset_info( 'editor-style-overrides', 'version' ),
 			true
@@ -104,12 +104,12 @@ function blocks_editor_styles() {
  * @return void
  */
 function enqueue_block_specific_styles() {
-	$stylesheets = glob( TENUP_THEME_DIST_PATH . 'blocks/autoenqueue/**/*.css' );
+	$stylesheets = glob( FBV2_THEME_DIST_PATH . 'blocks/autoenqueue/**/*.css' );
 
 	foreach ( $stylesheets as $stylesheet_path ) {
-		$block_type = str_replace( TENUP_THEME_DIST_PATH . 'blocks/autoenqueue/', '', $stylesheet_path );
+		$block_type = str_replace( FBV2_THEME_DIST_PATH . 'blocks/autoenqueue/', '', $stylesheet_path );
 		$block_type = str_replace( '.css', '', $block_type );
-		$asset_file = TENUP_THEME_DIST_PATH . 'blocks/autoenqueue/' . $block_type . '.asset.php';
+		$asset_file = FBV2_THEME_DIST_PATH . 'blocks/autoenqueue/' . $block_type . '.asset.php';
 
 		if ( ! file_exists( $asset_file ) ) {
 			$asset_file = require $asset_file;
@@ -124,7 +124,7 @@ function enqueue_block_specific_styles() {
 
 		wp_register_style(
 			"fbv2-theme-{$block_namespace}-{$block_name}",
-			TENUP_THEME_DIST_URL . 'blocks/autoenqueue/' . $block_type . '.css',
+			FBV2_THEME_DIST_URL . 'blocks/autoenqueue/' . $block_type . '.css',
 			$asset_file['version'],
 			$asset_file['dependencies'],
 		);

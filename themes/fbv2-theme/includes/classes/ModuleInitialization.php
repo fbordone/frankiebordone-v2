@@ -57,7 +57,7 @@ class ModuleInitialization {
 	 */
 	protected function get_classes() {
 		$class_finder = new ClassFinder();
-		$class_finder::setAppRoot( TENUP_THEME_PATH );
+		$class_finder::setAppRoot( FBV2_THEME_PATH );
 		return $class_finder::getClassesInNamespace( 'Fbv2Theme', ClassFinder::RECURSIVE_MODE );
 	}
 

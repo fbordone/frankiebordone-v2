@@ -43,13 +43,13 @@ function init() {
 	do_action( 'tenup_theme_before_init' );
 
 	// If the composer.json isn't found, trigger a warning.
-	if ( ! file_exists( TENUP_THEME_PATH . 'composer.json' ) ) {
+	if ( ! file_exists( FBV2_THEME_PATH . 'composer.json' ) ) {
 		add_action(
 			'admin_notices',
 			function () {
 				$class = 'notice notice-error';
 				/* translators: %s: the path to the plugin */
-				$message = sprintf( __( 'The composer.json file was not found within %s. No classes will be loaded.', 'fbv2-theme' ), TENUP_THEME_PATH );
+				$message = sprintf( __( 'The composer.json file was not found within %s. No classes will be loaded.', 'fbv2-theme' ), FBV2_THEME_PATH );
 
 				printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) );
 			}
@@ -71,7 +71,7 @@ function init() {
  * @return void
  */
 function i18n() {
-	load_theme_textdomain( 'fbv2-theme', TENUP_THEME_PATH . '/languages' );
+	load_theme_textdomain( 'fbv2-theme', FBV2_THEME_PATH . '/languages' );
 }
 
 /**
@@ -121,7 +121,7 @@ function scripts() {
 	 */
 	wp_enqueue_script(
 		'frontend',
-		TENUP_THEME_TEMPLATE_URL . '/dist/js/frontend.js',
+		FBV2_THEME_TEMPLATE_URL . '/dist/js/frontend.js',
 		Utility\get_asset_info( 'frontend', 'dependencies' ),
 		Utility\get_asset_info( 'frontend', 'version' ),
 		true
@@ -130,7 +130,7 @@ function scripts() {
 	if ( is_page_template( 'templates/page-styleguide.php' ) ) {
 		wp_enqueue_script(
 			'styleguide',
-			TENUP_THEME_TEMPLATE_URL . '/dist/js/styleguide.js',
+			FBV2_THEME_TEMPLATE_URL . '/dist/js/styleguide.js',
 			Utility\get_asset_info( 'styleguide', 'dependencies' ),
 			Utility\get_asset_info( 'styleguide', 'version' ),
 			true
@@ -146,7 +146,7 @@ function scripts() {
 	 * Uncoment this to use the shared.js file.
 		wp_enqueue_script(
 			'shared',
-			TENUP_THEME_TEMPLATE_URL . '/dist/js/shared.js',
+			FBV2_THEME_TEMPLATE_URL . '/dist/js/shared.js',
 			Utility\get_asset_info( 'shared', 'dependencies' ),
 			Utility\get_asset_info( 'shared', 'version' ),
 			true
@@ -162,7 +162,7 @@ function scripts() {
 function admin_scripts() {
 	wp_enqueue_script(
 		'admin',
-		TENUP_THEME_TEMPLATE_URL . '/dist/js/admin.js',
+		FBV2_THEME_TEMPLATE_URL . '/dist/js/admin.js',
 		Utility\get_asset_info( 'admin', 'dependencies' ),
 		Utility\get_asset_info( 'admin', 'version' ),
 		true
@@ -172,7 +172,7 @@ function admin_scripts() {
 	 * Uncoment this to use the shared.js file.
 		wp_enqueue_script(
 			'shared',
-			TENUP_THEME_TEMPLATE_URL . '/dist/js/shared.js',
+			FBV2_THEME_TEMPLATE_URL . '/dist/js/shared.js',
 			Utility\get_asset_info( 'shared', 'dependencies' ),
 			Utility\get_asset_info( 'shared', 'version' ),
 			true
@@ -188,7 +188,7 @@ function admin_scripts() {
 function enqueue_block_editor_scripts() {
 	wp_enqueue_script(
 		'block-editor-script',
-		TENUP_THEME_DIST_URL . 'js/block-editor-script.js',
+		FBV2_THEME_DIST_URL . 'js/block-editor-script.js',
 		Utility\get_asset_info( 'block-editor-script', 'dependencies' ),
 		Utility\get_asset_info( 'block-editor-script', 'version' ),
 		true
@@ -204,7 +204,7 @@ function admin_styles() {
 
 	wp_enqueue_style(
 		'admin-style',
-		TENUP_THEME_TEMPLATE_URL . '/dist/css/admin.css',
+		FBV2_THEME_TEMPLATE_URL . '/dist/css/admin.css',
 		[],
 		Utility\get_asset_info( 'admin-style', 'version' )
 	);
@@ -213,7 +213,7 @@ function admin_styles() {
 	 * Uncoment this to use the shared.css file.
 		wp_enqueue_style(
 			'shared-style',
-			TENUP_THEME_TEMPLATE_URL . '/dist/css/shared.css',
+			FBV2_THEME_TEMPLATE_URL . '/dist/css/shared.css',
 			[],
 			Utility\get_asset_info( 'shared', 'version' )
 		);
@@ -229,7 +229,7 @@ function styles() {
 
 	wp_enqueue_style(
 		'styles',
-		TENUP_THEME_TEMPLATE_URL . '/dist/css/frontend.css',
+		FBV2_THEME_TEMPLATE_URL . '/dist/css/frontend.css',
 		[],
 		Utility\get_asset_info( 'frontend', 'version' )
 	);
@@ -237,7 +237,7 @@ function styles() {
 	if ( is_page_template( 'templates/page-styleguide.php' ) ) {
 		wp_enqueue_style(
 			'styleguide',
-			TENUP_THEME_TEMPLATE_URL . '/dist/css/styleguide.css',
+			FBV2_THEME_TEMPLATE_URL . '/dist/css/styleguide.css',
 			[],
 			Utility\get_asset_info( 'styleguide-style', 'version' )
 		);
