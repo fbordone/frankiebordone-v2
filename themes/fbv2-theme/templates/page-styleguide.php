@@ -2,13 +2,13 @@
 /**
  * Template Name: Style Guide
  *
- * @package TenUpTheme
+ * @package Fbv2Theme
  */
 
-namespace TenUpTheme\Utility;
+namespace Fbv2Theme\Utility;
 
-use function TenUpTheme\Utility\adjust_brightness;
-use function TenUpTheme\Utility\get_colors;
+use function Fbv2Theme\Utility\adjust_brightness;
+use function Fbv2Theme\Utility\get_colors;
 
 get_header();
 ?>

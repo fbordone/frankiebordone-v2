@@ -6,7 +6,7 @@ To do this, it uses the [haydenpierce/class-finder](https://packagist.org/packag
 
 ## How do I define a class to be auto-registered?
 
-All you need to do to get a class to auto-register is extend the `TenUpPlugin\Module::class` or `TenUpTheme\Module::class` classes. That will require you to implement a `can_register()` and a `register()` method.
+All you need to do to get a class to auto-register is extend the `TenUpPlugin\Module::class` or `Fbv2Theme\Module::class` classes. That will require you to implement a `can_register()` and a `register()` method.
 
 ### `can_register()`
 
@@ -143,7 +143,7 @@ The best way now, is to use the `get_module()` function that ships with the plug
 
 ```php
 $site_settings = \TenUpPlugin\get_module( '\TenUpPlugin\Admin\SiteSettings' );
-$a_theme_class = \TenUpTheme\get_module( '\TenUpTheme\Some\Theme\Class' );
+$a_theme_class = \Fbv2Theme\get_module( '\Fbv2Theme\Some\Theme\Class' );
 ```
 
 If it can't find the class, it will return `false`.

@@ -2,7 +2,7 @@
 /**
  * WP Theme constants and setup functions
  *
- * @package TenUpTheme
+ * @package Fbv2Theme
  */
 
 // Useful global constants.
@@ -32,8 +32,8 @@ require_once TENUP_THEME_INC . 'blocks.php';
 require_once TENUP_THEME_INC . 'helpers.php';
 
 // Run the setup functions.
-TenUpTheme\Core\setup();
-TenUpTheme\Blocks\setup();
+Fbv2Theme\Core\setup();
+Fbv2Theme\Blocks\setup();
 
 // Require Composer autoloader if it exists.
 if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {

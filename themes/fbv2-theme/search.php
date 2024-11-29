@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results pages.
  *
- * @package TenUpTheme
+ * @package Fbv2Theme
  */
 
 get_header(); ?>

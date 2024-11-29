@@ -2,10 +2,10 @@
 /**
  * This file contains hooks and functions that override the behavior of WP Core.
  *
- * @package TenUpTheme
+ * @package Fbv2Theme
  */
 
-namespace TenUpTheme\Overrides;
+namespace Fbv2Theme\Overrides;
 
 /**
  * Registers instances where we will override default WP Core behavior.

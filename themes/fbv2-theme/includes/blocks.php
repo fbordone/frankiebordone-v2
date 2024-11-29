@@ -2,12 +2,12 @@
 /**
  * Gutenberg Blocks setup
  *
- * @package TenUpTheme
+ * @package Fbv2Theme
  */
 
-namespace TenUpTheme\Blocks;
+namespace Fbv2Theme\Blocks;
 
-use TenUpTheme\Utility;
+use Fbv2Theme\Utility;
 
 /**
  * Set up blocks

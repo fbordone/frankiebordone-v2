@@ -4,7 +4,7 @@
  * Slug: tenup-theme/example
  * Categories: 10up-theme
  *
- * @package TenUpTheme
+ * @package Fbv2Theme
  */
 
 ?>

@@ -2,10 +2,10 @@
 /**
  * Module
  *
- * @package TenUpTheme
+ * @package Fbv2Theme
  */
 
-namespace TenUpTheme;
+namespace Fbv2Theme;
 
 /**
  * Module is any feature that conditionally activates based on the current context.

@@ -2,7 +2,7 @@
 /**
  * Example block markup
  *
- * @package TenUpTheme\Blocks\Example
+ * @package Fbv2Theme\Blocks\Example
  *
  * @var array    $attributes         Block attributes.
  * @var string   $content            Block content.

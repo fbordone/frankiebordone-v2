@@ -2,7 +2,7 @@
 /**
  * The main template file
  *
- * @package TenUpTheme
+ * @package Fbv2Theme
  */
 
 get_header(); ?>

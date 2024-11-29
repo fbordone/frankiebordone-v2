@@ -8,10 +8,10 @@
  * to Namespaces.
  *
  * @link https://developer.wordpress.org/themes/basics/template-tags/
- * @package TenUpTheme
+ * @package Fbv2Theme
  */
 
-namespace TenUpTheme\Utility;
+namespace Fbv2Theme\Utility;
 
 /**
  * Get asset info from extracted asset files

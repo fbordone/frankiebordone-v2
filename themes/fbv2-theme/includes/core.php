@@ -2,13 +2,13 @@
 /**
  * Core setup, site hooks and filters.
  *
- * @package TenUpTheme
+ * @package Fbv2Theme
  */
 
-namespace TenUpTheme\Core;
+namespace Fbv2Theme\Core;
 
-use TenUpTheme\ModuleInitialization;
-use TenUpTheme\Utility;
+use Fbv2Theme\ModuleInitialization;
+use Fbv2Theme\Utility;
 
 /**
  * Set up theme defaults and register supported WordPress features.
@@ -66,7 +66,7 @@ function init() {
  *
  * Translations can be added to the /languages directory.
  * If you're building a theme based on "tenup-theme", change the
- * filename of '/languages/TenUpTheme.pot' to the name of your project.
+ * filename of '/languages/Fbv2Theme.pot' to the name of your project.
  *
  * @return void
  */
