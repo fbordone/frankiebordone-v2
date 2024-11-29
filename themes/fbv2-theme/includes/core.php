@@ -20,7 +20,7 @@ function setup() {
 		return __NAMESPACE__ . "\\$function";
 	};
 
-	add_action( 'init', $n( 'init' ), apply_filters( 'tenup_theme_init_priority', 8 ) );
+	add_action( 'init', $n( 'init' ), apply_filters( 'fbv2_theme_init_priority', 8 ) );
 	add_action( 'after_setup_theme', $n( 'i18n' ) );
 	add_action( 'after_setup_theme', $n( 'theme_setup' ) );
 	add_action( 'wp_enqueue_scripts', $n( 'scripts' ) );
@@ -40,7 +40,7 @@ function setup() {
  * @return void
  */
 function init() {
-	do_action( 'tenup_theme_before_init' );
+	do_action( 'fbv2_theme_before_init' );
 
 	// If the composer.json isn't found, trigger a warning.
 	if ( ! file_exists( FBV2_THEME_PATH . 'composer.json' ) ) {
@@ -58,7 +58,7 @@ function init() {
 	}
 
 	ModuleInitialization::instance()->init_classes();
-	do_action( 'tenup_theme_init' );
+	do_action( 'fbv2_theme_init' );
 }
 
 /**
