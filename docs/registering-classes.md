@@ -105,7 +105,7 @@ class SiteSettings extends \Fbv2Plugin\Module {
 		fm_register_submenu_page(
 			$this->name,
 			'options-general.php',
-			__( 'Site Settings', 'tenup-plugin' )
+			__( 'Site Settings', 'fbv2-plugin' )
 		);
 
 		// Load the fields.

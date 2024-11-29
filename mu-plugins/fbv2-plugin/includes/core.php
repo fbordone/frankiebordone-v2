@@ -43,9 +43,9 @@ function setup() {
  * @return void
  */
 function i18n() {
-	$locale = apply_filters( 'plugin_locale', get_locale(), 'tenup-plugin' );
-	load_textdomain( 'tenup-plugin', WP_LANG_DIR . '/tenup-plugin/tenup-plugin-' . $locale . '.mo' );
-	load_plugin_textdomain( 'tenup-plugin', false, plugin_basename( TENUP_PLUGIN_PATH ) . '/languages/' );
+	$locale = apply_filters( 'plugin_locale', get_locale(), 'fbv2-plugin' );
+	load_textdomain( 'fbv2-plugin', WP_LANG_DIR . '/fbv2-plugin/fbv2-plugin-' . $locale . '.mo' );
+	load_plugin_textdomain( 'fbv2-plugin', false, plugin_basename( TENUP_PLUGIN_PATH ) . '/languages/' );
 }
 
 /**
@@ -63,7 +63,7 @@ function init() {
 			function () {
 				$class = 'notice notice-error';
 				/* translators: %s: the path to the plugin */
-				$message = sprintf( __( 'The composer.json file was not found within %s. No classes will be loaded.', 'tenup-plugin' ), TENUP_PLUGIN_PATH );
+				$message = sprintf( __( 'The composer.json file was not found within %s. No classes will be loaded.', 'fbv2-plugin' ), TENUP_PLUGIN_PATH );
 
 				printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) );
 			}

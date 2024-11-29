@@ -29,14 +29,14 @@ You can also use the scaffold manually by doing the following:
   ],
 ```
 6. To build plugins/themes simply run `npm install` at the root and `npm run [build|start|watch]` and npm will automatically build all themes and plugins. If a WordPress critical error is received run `composer install` in all locations that have an existing `composer.lock` file; example locations: `root`, `/mu-plugins/10up-plugin`, `/themes/fbv2-theme`. Upon build completion set the `fbv2-theme` as active within WordPress admin by running `wp theme activate fbv2-theme`.
-7. `npm workspaces` do not have the ability to run scripts from multiple packages in parrallel. Because of that we use the `npm-run-all` package and we define specific scripts in `package.json` so you will need to update the `watch:*` scripts in `package.json` and replace `fbv2-theme` and `tenup-plugin` with the actual package names.
+7. `npm workspaces` do not have the ability to run scripts from multiple packages in parrallel. Because of that we use the `npm-run-all` package and we define specific scripts in `package.json` so you will need to update the `watch:*` scripts in `package.json` and replace `fbv2-theme` and `fbv2-plugin` with the actual package names.
 
 ```json
 	"watch:theme": "npm run watch -w=fbv2-theme",
-	"watch:plugin": "npm run watch -w=tenup-plugin",
+	"watch:plugin": "npm run watch -w=fbv2-plugin",
 	"watch": "run-s watch:theme watch:plugin",
 ```
-7. To add npm dependencies to your theme and/or plugins add the `-w=package-name` flag to the `npm install` command. E.g: `npm install --save prop-types -w=tenup-plugin` **DO NOT RUN** `npm install` inside an individual workspace/package. Always run the from the root folder.
+7. To add npm dependencies to your theme and/or plugins add the `-w=package-name` flag to the `npm install` command. E.g: `npm install --save prop-types -w=fbv2-plugin` **DO NOT RUN** `npm install` inside an individual workspace/package. Always run the from the root folder.
 8. If you're building Gutenberg blocks and importing `@wordpress/*` packages, **you do not** need to manually install them as `10up-toolkit` will handle these packages properly.
 
 ## Scaffold Rules

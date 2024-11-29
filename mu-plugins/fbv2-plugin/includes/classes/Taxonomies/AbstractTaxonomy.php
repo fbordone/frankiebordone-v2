@@ -122,19 +122,19 @@ abstract class AbstractTaxonomy extends Module {
 		$labels = [
 			'name'                       => $plural_label, // Already translated via get_plural_label().
 			'singular_name'              => $singular_label, // Already translated via get_singular_label().
-			'search_items'               => sprintf( __( 'Search %s', 'tenup-plugin' ), $plural_label ),
-			'popular_items'              => sprintf( __( 'Popular %s', 'tenup-plugin' ), $plural_label ),
-			'all_items'                  => sprintf( __( 'All %s', 'tenup-plugin' ), $plural_label ),
-			'edit_item'                  => sprintf( __( 'Edit %s', 'tenup-plugin' ), $singular_label ),
-			'update_item'                => sprintf( __( 'Update %s', 'tenup-plugin' ), $singular_label ),
-			'add_new_item'               => sprintf( __( 'Add %s', 'tenup-plugin' ), $singular_label ),
-			'new_item_name'              => sprintf( __( 'New %s Name', 'tenup-plugin' ), $singular_label ),
-			'separate_items_with_commas' => sprintf( __( 'Separate %s with commas', 'tenup-plugin' ), strtolower( $plural_label ) ),
-			'add_or_remove_items'        => sprintf( __( 'Add or remove %s', 'tenup-plugin' ), strtolower( $plural_label ) ),
-			'choose_from_most_used'      => sprintf( __( 'Choose from the most used %s', 'tenup-plugin' ), strtolower( $plural_label ) ),
-			'not_found'                  => sprintf( __( 'No %s found.', 'tenup-plugin' ), strtolower( $plural_label ) ),
-			'not_found_in_trash'         => sprintf( __( 'No %s found in Trash.', 'tenup-plugin' ), strtolower( $plural_label ) ),
-			'view_item'                  => sprintf( __( 'View %s', 'tenup-plugin' ), $singular_label ),
+			'search_items'               => sprintf( __( 'Search %s', 'fbv2-plugin' ), $plural_label ),
+			'popular_items'              => sprintf( __( 'Popular %s', 'fbv2-plugin' ), $plural_label ),
+			'all_items'                  => sprintf( __( 'All %s', 'fbv2-plugin' ), $plural_label ),
+			'edit_item'                  => sprintf( __( 'Edit %s', 'fbv2-plugin' ), $singular_label ),
+			'update_item'                => sprintf( __( 'Update %s', 'fbv2-plugin' ), $singular_label ),
+			'add_new_item'               => sprintf( __( 'Add %s', 'fbv2-plugin' ), $singular_label ),
+			'new_item_name'              => sprintf( __( 'New %s Name', 'fbv2-plugin' ), $singular_label ),
+			'separate_items_with_commas' => sprintf( __( 'Separate %s with commas', 'fbv2-plugin' ), strtolower( $plural_label ) ),
+			'add_or_remove_items'        => sprintf( __( 'Add or remove %s', 'fbv2-plugin' ), strtolower( $plural_label ) ),
+			'choose_from_most_used'      => sprintf( __( 'Choose from the most used %s', 'fbv2-plugin' ), strtolower( $plural_label ) ),
+			'not_found'                  => sprintf( __( 'No %s found.', 'fbv2-plugin' ), strtolower( $plural_label ) ),
+			'not_found_in_trash'         => sprintf( __( 'No %s found in Trash.', 'fbv2-plugin' ), strtolower( $plural_label ) ),
+			'view_item'                  => sprintf( __( 'View %s', 'fbv2-plugin' ), $singular_label ),
 		];
 		// phpcs:enable
 

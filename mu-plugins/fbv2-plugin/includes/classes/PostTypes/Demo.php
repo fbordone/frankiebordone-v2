@@ -27,7 +27,7 @@ class Demo extends AbstractPostType {
 	 * @return string
 	 */
 	public function get_singular_label() {
-		return esc_html__( 'Demo', 'tenup-plugin' );
+		return esc_html__( 'Demo', 'fbv2-plugin' );
 	}
 
 	/**
@@ -36,7 +36,7 @@ class Demo extends AbstractPostType {
 	 * @return string
 	 */
 	public function get_plural_label() {
-		return esc_html__( 'Demos', 'tenup-plugin' );
+		return esc_html__( 'Demos', 'fbv2-plugin' );
 	}
 
 	/**
