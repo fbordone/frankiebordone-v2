@@ -2,12 +2,12 @@
 /**
  * AbstractTaxonomy
  *
- * @package TenUpPlugin
+ * @package Fbv2Plugin
  */
 
-namespace TenUpPlugin\Taxonomies;
+namespace Fbv2Plugin\Taxonomies;
 
-use TenUpPlugin\Module;
+use Fbv2Plugin\Module;
 
 /**
  * Abstract Base Class for Taxonomies.

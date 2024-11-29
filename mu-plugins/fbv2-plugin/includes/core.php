@@ -2,14 +2,14 @@
 /**
  * Core plugin functionality.
  *
- * @package TenUpPlugin
+ * @package Fbv2Plugin
  */
 
-namespace TenUpPlugin\Core;
+namespace Fbv2Plugin\Core;
 
-use TenUpPlugin\ModuleInitialization;
+use Fbv2Plugin\ModuleInitialization;
 use WP_Error;
-use TenUpPlugin\Utility;
+use Fbv2Plugin\Utility;
 
 
 /**
@@ -117,7 +117,7 @@ function get_enqueue_contexts() {
 function script_url( $script, $context ) {
 
 	if ( ! in_array( $context, get_enqueue_contexts(), true ) ) {
-		return new WP_Error( 'invalid_enqueue_context', 'Invalid $context specified in TenUpPlugin script loader.' );
+		return new WP_Error( 'invalid_enqueue_context', 'Invalid $context specified in Fbv2Plugin script loader.' );
 	}
 
 	return TENUP_PLUGIN_URL . "dist/js/{$script}.js";
@@ -134,7 +134,7 @@ function script_url( $script, $context ) {
 function style_url( $stylesheet, $context ) {
 
 	if ( ! in_array( $context, get_enqueue_contexts(), true ) ) {
-		return new WP_Error( 'invalid_enqueue_context', 'Invalid $context specified in TenUpPlugin stylesheet loader.' );
+		return new WP_Error( 'invalid_enqueue_context', 'Invalid $context specified in Fbv2Plugin stylesheet loader.' );
 	}
 
 	return TENUP_PLUGIN_URL . "dist/css/{$stylesheet}.css";

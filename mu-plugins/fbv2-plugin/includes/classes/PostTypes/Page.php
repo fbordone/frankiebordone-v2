@@ -2,10 +2,10 @@
 /**
  * Page Post Type
  *
- * @package TenUpPlugin
+ * @package Fbv2Plugin
  */
 
-namespace TenUpPlugin\PostTypes;
+namespace Fbv2Plugin\PostTypes;
 
 /**
  * Page Post Type

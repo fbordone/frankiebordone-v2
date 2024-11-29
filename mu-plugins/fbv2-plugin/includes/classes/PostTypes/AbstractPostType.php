@@ -2,12 +2,12 @@
 /**
  * AbstractPostType
  *
- * @package TenUpPlugin
+ * @package Fbv2Plugin
  */
 
-namespace TenUpPlugin\PostTypes;
+namespace Fbv2Plugin\PostTypes;
 
-use TenUpPlugin\Module;
+use Fbv2Plugin\Module;
 
 /**
  * Abstract class for post types.

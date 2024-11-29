@@ -13,7 +13,7 @@
  * Domain Path:       /languages
  * Update URI:        https://github.com/10up/wp-scaffold
  *
- * @package           TenUpPlugin
+ * @package           Fbv2Plugin
  */
 
 // Useful global constants.
@@ -43,8 +43,8 @@ require_once TENUP_PLUGIN_INC . '/utility.php';
 require_once TENUP_PLUGIN_INC . '/core.php';
 
 // Activation/Deactivation.
-register_activation_hook( __FILE__, '\TenUpPlugin\Core\activate' );
-register_deactivation_hook( __FILE__, '\TenUpPlugin\Core\deactivate' );
+register_activation_hook( __FILE__, '\Fbv2Plugin\Core\activate' );
+register_deactivation_hook( __FILE__, '\Fbv2Plugin\Core\deactivate' );
 
 // Bootstrap.
-TenUpPlugin\Core\setup();
+Fbv2Plugin\Core\setup();

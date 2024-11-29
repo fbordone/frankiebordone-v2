@@ -2,10 +2,10 @@
 /**
  * Auto-initialize all Module based clases in the plugin.
  *
- * @package TenUpPlugin
+ * @package Fbv2Plugin
  */
 
-namespace TenUpPlugin;
+namespace Fbv2Plugin;
 
 use HaydenPierce\ClassFinder\ClassFinder;
 use ReflectionClass;
@@ -13,7 +13,7 @@ use ReflectionClass;
 /**
  * ModuleInitialization class.
  *
- * @package TenUpPlugin
+ * @package Fbv2Plugin
  */
 class ModuleInitialization {
 
@@ -51,18 +51,18 @@ class ModuleInitialization {
 	protected $classes = [];
 
 	/**
-	 * Get all the TenUpPlugin plugin classes.
+	 * Get all the Fbv2Plugin plugin classes.
 	 *
 	 * @return array
 	 */
 	protected function get_classes() {
 		$class_finder = new ClassFinder();
 		$class_finder::setAppRoot( TENUP_PLUGIN_PATH );
-		return $class_finder::getClassesInNamespace( 'TenUpPlugin', ClassFinder::RECURSIVE_MODE );
+		return $class_finder::getClassesInNamespace( 'Fbv2Plugin', ClassFinder::RECURSIVE_MODE );
 	}
 
 	/**
-	 * Initialize all the TenUpPlugin plugin classes.
+	 * Initialize all the Fbv2Plugin plugin classes.
 	 *
 	 * @return void
 	 */
@@ -87,7 +87,7 @@ class ModuleInitialization {
 			}
 
 			// Make sure the class is a subclass of Module, so we can initialize it.
-			if ( ! $reflection_class->isSubclassOf( '\TenUpPlugin\Module' ) ) {
+			if ( ! $reflection_class->isSubclassOf( '\Fbv2Plugin\Module' ) ) {
 				continue;
 			}
 
@@ -137,7 +137,7 @@ class ModuleInitialization {
 	 *
 	 * @param string $class_name The class name & namespace.
 	 *
-	 * @return false|\TenUpPlugin\Module
+	 * @return false|\Fbv2Plugin\Module
 	 */
 	public function get_class( $class_name ) {
 		$class_name = $this->slugify_class_name( $class_name );

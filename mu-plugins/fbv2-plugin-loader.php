@@ -13,7 +13,7 @@
  * Domain Path:       /languages
  * Update URI:        https://github.com/10up/wp-scaffold
  *
- * @package           TenUpPlugin
+ * @package           Fbv2Plugin
  */
 
 require_once __DIR__ . '/10up-plugin/plugin.php';

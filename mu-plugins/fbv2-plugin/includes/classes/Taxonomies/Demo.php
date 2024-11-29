@@ -2,10 +2,10 @@
 /**
  * Demo Taxonomy
  *
- * @package TenUpPlugin
+ * @package Fbv2Plugin
  */
 
-namespace TenUpPlugin\Taxonomies;
+namespace Fbv2Plugin\Taxonomies;
 
 /**
  * Demo Taxonomy.
