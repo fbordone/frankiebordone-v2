@@ -1,4 +1,4 @@
-# 10up Theme
+# Fbv2 Theme
 
 ## Working with `theme.json`
 The default theme scaffold now ships with a very basic version of the `theme.json` file. This is to ensure all the side-affects of introducing this file are there from the beginning of a project and therefore set projects up for success if they want to adopt more features through the `theme.json` mechanism.

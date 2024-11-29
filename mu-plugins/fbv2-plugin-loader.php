@@ -6,7 +6,7 @@
  * Requires at least: 4.9
  * Requires PHP:      7.2
  * Author:            10up
- * Author URI:        https://10up.com
+ * Author URI:        https://frankiebordone.com
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       tenup-plugin

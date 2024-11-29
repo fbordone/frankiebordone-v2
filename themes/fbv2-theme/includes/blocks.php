@@ -151,6 +151,6 @@ function register_block_pattern_categories() {
 	// Register a block pattern category
 	register_block_pattern_category(
 		'10up-theme',
-		[ 'label' => __( '10up Theme', 'tenup-theme' ) ]
+		[ 'label' => __( 'Fbv2 Theme', 'tenup-theme' ) ]
 	);
 }
