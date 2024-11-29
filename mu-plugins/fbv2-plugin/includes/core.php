@@ -23,7 +23,7 @@ function setup() {
 	};
 
 	add_action( 'init', $n( 'i18n' ) );
-	add_action( 'init', $n( 'init' ), apply_filters( 'tenup_plugin_init_priority', 8 ) );
+	add_action( 'init', $n( 'init' ), apply_filters( 'fbv2_plugin_init_priority', 8 ) );
 	add_action( 'wp_enqueue_scripts', $n( 'scripts' ) );
 	add_action( 'wp_enqueue_scripts', $n( 'styles' ) );
 	add_action( 'admin_enqueue_scripts', $n( 'admin_scripts' ) );
@@ -34,7 +34,7 @@ function setup() {
 	// Hook to allow async or defer on asset loading.
 	add_filter( 'script_loader_tag', $n( 'script_loader_tag' ), 10, 2 );
 
-	do_action( 'tenup_plugin_loaded' );
+	do_action( 'fbv2_plugin_loaded' );
 }
 
 /**
@@ -54,7 +54,7 @@ function i18n() {
  * @return void
  */
 function init() {
-	do_action( 'tenup_plugin_before_init' );
+	do_action( 'fbv2_plugin_before_init' );
 
 	// If the composer.json isn't found, trigger a warning.
 	if ( ! file_exists( TENUP_PLUGIN_PATH . 'composer.json' ) ) {
@@ -72,7 +72,7 @@ function init() {
 	}
 
 	ModuleInitialization::instance()->init_classes();
-	do_action( 'tenup_plugin_init' );
+	do_action( 'fbv2_plugin_init' );
 }
 
 /**
@@ -148,7 +148,7 @@ function style_url( $stylesheet, $context ) {
 function scripts() {
 
 	wp_enqueue_script(
-		'tenup_plugin_shared',
+		'fbv2_plugin_shared',
 		script_url( 'shared', 'shared' ),
 		Utility\get_asset_info( 'shared', 'dependencies' ),
 		Utility\get_asset_info( 'shared', 'version' ),
@@ -156,7 +156,7 @@ function scripts() {
 	);
 
 	wp_enqueue_script(
-		'tenup_plugin_frontend',
+		'fbv2_plugin_frontend',
 		script_url( 'frontend', 'frontend' ),
 		Utility\get_asset_info( 'frontend', 'dependencies' ),
 		Utility\get_asset_info( 'frontend', 'version' ),
@@ -172,7 +172,7 @@ function scripts() {
 function admin_scripts() {
 
 	wp_enqueue_script(
-		'tenup_plugin_shared',
+		'fbv2_plugin_shared',
 		script_url( 'shared', 'shared' ),
 		Utility\get_asset_info( 'shared', 'dependencies' ),
 		Utility\get_asset_info( 'shared', 'version' ),
@@ -180,7 +180,7 @@ function admin_scripts() {
 	);
 
 	wp_enqueue_script(
-		'tenup_plugin_admin',
+		'fbv2_plugin_admin',
 		script_url( 'admin', 'admin' ),
 		Utility\get_asset_info( 'admin', 'dependencies' ),
 		Utility\get_asset_info( 'admin', 'version' ),
@@ -196,7 +196,7 @@ function admin_scripts() {
 function styles() {
 
 	wp_enqueue_style(
-		'tenup_plugin_shared',
+		'fbv2_plugin_shared',
 		style_url( 'shared', 'shared' ),
 		[],
 		Utility\get_asset_info( 'shared', 'version' ),
@@ -204,14 +204,14 @@ function styles() {
 
 	if ( is_admin() ) {
 		wp_enqueue_style(
-			'tenup_plugin_admin',
+			'fbv2_plugin_admin',
 			style_url( 'admin', 'admin' ),
 			[],
 			Utility\get_asset_info( 'admin', 'version' ),
 		);
 	} else {
 		wp_enqueue_style(
-			'tenup_plugin_frontend',
+			'fbv2_plugin_frontend',
 			style_url( 'frontend', 'frontend' ),
 			[],
 			Utility\get_asset_info( 'frontend', 'version' ),
@@ -227,14 +227,14 @@ function styles() {
 function admin_styles() {
 
 	wp_enqueue_style(
-		'tenup_plugin_shared',
+		'fbv2_plugin_shared',
 		style_url( 'shared', 'shared' ),
 		[],
 		Utility\get_asset_info( 'shared', 'version' ),
 	);
 
 	wp_enqueue_style(
-		'tenup_plugin_admin',
+		'fbv2_plugin_admin',
 		style_url( 'admin', 'admin' ),
 		[],
 		Utility\get_asset_info( 'admin', 'version' ),
