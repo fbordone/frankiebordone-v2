@@ -123,7 +123,7 @@ function enqueue_block_specific_styles() {
 		[$block_namespace, $block_name] = explode( '/', $block_type );
 
 		wp_register_style(
-			"tenup-theme-{$block_namespace}-{$block_name}",
+			"fbv2-theme-{$block_namespace}-{$block_name}",
 			TENUP_THEME_DIST_URL . 'blocks/autoenqueue/' . $block_type . '.css',
 			$asset_file['version'],
 			$asset_file['dependencies'],
@@ -132,7 +132,7 @@ function enqueue_block_specific_styles() {
 		wp_enqueue_block_style(
 			$block_type,
 			[
-				'handle' => "tenup-theme-{$block_namespace}-{$block_name}",
+				'handle' => "fbv2-theme-{$block_namespace}-{$block_name}",
 				'path'   => $stylesheet_path,
 			]
 		);
@@ -151,6 +151,6 @@ function register_block_pattern_categories() {
 	// Register a block pattern category
 	register_block_pattern_category(
 		'10up-theme',
-		[ 'label' => __( 'Fbv2 Theme', 'tenup-theme' ) ]
+		[ 'label' => __( 'Fbv2 Theme', 'fbv2-theme' ) ]
 	);
 }

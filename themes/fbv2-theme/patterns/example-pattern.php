@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Example Pattern
- * Slug: tenup-theme/example
+ * Slug: fbv2-theme/example
  * Categories: 10up-theme
  *
  * @package Fbv2Theme

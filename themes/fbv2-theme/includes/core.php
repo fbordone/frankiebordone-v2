@@ -49,7 +49,7 @@ function init() {
 			function () {
 				$class = 'notice notice-error';
 				/* translators: %s: the path to the plugin */
-				$message = sprintf( __( 'The composer.json file was not found within %s. No classes will be loaded.', 'tenup-theme' ), TENUP_THEME_PATH );
+				$message = sprintf( __( 'The composer.json file was not found within %s. No classes will be loaded.', 'fbv2-theme' ), TENUP_THEME_PATH );
 
 				printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) );
 			}
@@ -65,13 +65,13 @@ function init() {
  * Makes Theme available for translation.
  *
  * Translations can be added to the /languages directory.
- * If you're building a theme based on "tenup-theme", change the
+ * If you're building a theme based on "fbv2-theme", change the
  * filename of '/languages/Fbv2Theme.pot' to the name of your project.
  *
  * @return void
  */
 function i18n() {
-	load_theme_textdomain( 'tenup-theme', TENUP_THEME_PATH . '/languages' );
+	load_theme_textdomain( 'fbv2-theme', TENUP_THEME_PATH . '/languages' );
 }
 
 /**
@@ -103,7 +103,7 @@ function theme_setup() {
 	// This theme uses wp_nav_menu() in three locations.
 	register_nav_menus(
 		array(
-			'primary' => esc_html__( 'Primary Menu', 'tenup-theme' ),
+			'primary' => esc_html__( 'Primary Menu', 'fbv2-theme' ),
 		)
 	);
 }

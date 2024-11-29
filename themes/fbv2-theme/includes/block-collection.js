@@ -9,5 +9,5 @@ import { registerBlockCollection } from '@wordpress/blocks';
  * See https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/#registerblockcollection
  */
 registerBlockCollection('tenup', {
-	title: __('Custom Blocks', 'tenup-theme'),
+	title: __('Custom Blocks', 'fbv2-theme'),
 });
