@@ -150,7 +150,7 @@ function register_block_pattern_categories() {
 
 	// Register a block pattern category
 	register_block_pattern_category(
-		'10up-theme',
+		'fbv2-theme',
 		[ 'label' => __( 'Fbv2 Theme', 'fbv2-theme' ) ]
 	);
 }

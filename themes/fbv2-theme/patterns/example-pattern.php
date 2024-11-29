@@ -2,7 +2,7 @@
 /**
  * Title: Example Pattern
  * Slug: fbv2-theme/example
- * Categories: 10up-theme
+ * Categories: fbv2-theme
  *
  * @package Fbv2Theme
  */

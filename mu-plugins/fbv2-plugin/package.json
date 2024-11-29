@@ -27,8 +27,8 @@
       "shared": "./assets/js/shared/shared.js"
     },
     "paths": {
-      "globalStylesDir": "../../themes/10up-theme/assets/css/globals/",
-      "globalMixinsDir": "../../themes/10up-theme/assets/css/globals/mixins/"
+      "globalStylesDir": "../../themes/fbv2-theme/assets/css/globals/",
+      "globalMixinsDir": "../../themes/fbv2-theme/assets/css/globals/mixins/"
     }
   }
 }
