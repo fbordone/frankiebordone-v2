@@ -2,12 +2,12 @@
 
 The MU plugin contains abstract classses that can be extended to easily register new post types and taxonomies. This document will explain how to use these classes to create new post types and taxonomies.
 
-If you want to jump right in, take a look at the `TenUpPlugin\PostTypes\Demo::class` and `TenUpPlugin\Taxonomies\Demo::class` classes.
+If you want to jump right in, take a look at the `Fbv2Plugin\PostTypes\Demo::class` and `Fbv2Plugin\Taxonomies\Demo::class` classes.
 
 
 ## Post Types
 
-To create a new post type, you will need to create a new class that extends the `TenUpPlugin\PostTypes\AbstractPostType` class. This class will contain the configuration for the new post type.
+To create a new post type, you will need to create a new class that extends the `Fbv2Plugin\PostTypes\AbstractPostType` class. This class will contain the configuration for the new post type.
 
 Once you've extended the class (or copied the `Demo` class), you will need to define the following methods:
 
@@ -170,7 +170,7 @@ The `after_register()` method can also be useful to hook into anything else you 
 
 ## Taxonomies
 
-To create a new taxonomy, you will need to create a new class that extends the `TenUpPlugin\Taxonomies\AbstractTaxonomy` class. This class will contain the configuration for the new taxonomy.
+To create a new taxonomy, you will need to create a new class that extends the `Fbv2Plugin\Taxonomies\AbstractTaxonomy` class. This class will contain the configuration for the new taxonomy.
 
 Once you've extended the class (or copied the `Demo` class), you will need to define the following methods:
 

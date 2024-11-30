@@ -6,7 +6,7 @@ To do this, it uses the [haydenpierce/class-finder](https://packagist.org/packag
 
 ## How do I define a class to be auto-registered?
 
-All you need to do to get a class to auto-register is extend the `TenUpPlugin\Module::class` or `TenUpTheme\Module::class` classes. That will require you to implement a `can_register()` and a `register()` method.
+All you need to do to get a class to auto-register is extend the `Fbv2Plugin\Module::class` or `Fbv2Theme\Module::class` classes. That will require you to implement a `can_register()` and a `register()` method.
 
 ### `can_register()`
 
@@ -63,12 +63,12 @@ One thing worth noting is that the `register()` method will be called at the pri
 Below is a sample of a class that would be auto-registered when in the admin area, used to register some settings via FieldManager:
 
 ```php
-namespace TenUpPlugin\Admin;
+namespace Fbv2Plugin\Admin;
 
 /**
  * Provide a Site Settings screen.
  */
-class SiteSettings extends \TenUpPlugin\Module {
+class SiteSettings extends \Fbv2Plugin\Module {
 
 	/**
 	 * Fieldmanager Setting ID
@@ -105,7 +105,7 @@ class SiteSettings extends \TenUpPlugin\Module {
 		fm_register_submenu_page(
 			$this->name,
 			'options-general.php',
-			__( 'Site Settings', 'tenup-plugin' )
+			__( 'Site Settings', 'fbv2-plugin' )
 		);
 
 		// Load the fields.
@@ -142,8 +142,8 @@ The old way of doing this would be to use the `get_plugin_support()` function. A
 The best way now, is to use the `get_module()` function that ships with the plugin and the theme.
 
 ```php
-$site_settings = \TenUpPlugin\get_module( '\TenUpPlugin\Admin\SiteSettings' );
-$a_theme_class = \TenUpTheme\get_module( '\TenUpTheme\Some\Theme\Class' );
+$site_settings = \Fbv2Plugin\get_module( '\Fbv2Plugin\Admin\SiteSettings' );
+$a_theme_class = \Fbv2Theme\get_module( '\Fbv2Theme\Some\Theme\Class' );
 ```
 
 If it can't find the class, it will return `false`.
@@ -161,12 +161,12 @@ To get around this, there is a `$load_order` property available on the `Module` 
 To see it in action, see below.
 
 ```php
-namespace TenUpPlugin\Admin;
+namespace Fbv2Plugin\Admin;
 
 /**
  * Taxonomy Factory
  */
-class TaxonomyFactory extends \TenUpPlugin\Module {
+class TaxonomyFactory extends \Fbv2Plugin\Module {
 
   public $load_order = 9;
 
@@ -175,12 +175,12 @@ class TaxonomyFactory extends \TenUpPlugin\Module {
 ```
 
 ```php
-namespace TenUpPlugin\Admin;
+namespace Fbv2Plugin\Admin;
 
 /**
  * Post Type Factory
  */
-class PostTypeFactory extends \TenUpPlugin\Module {
+class PostTypeFactory extends \Fbv2Plugin\Module {
 
   // Rest of class removed for brevity.
 }
