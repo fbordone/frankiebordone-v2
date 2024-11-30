@@ -1,6 +1,6 @@
 {
   "name": "fbv2/wp-scaffold",
-  "description": "Project description.",
+  "description": "A modern and streamlined WordPress theme built for a personal portfolio website.",
   "license": "MIT",
   "authors": [
     {
@@ -19,7 +19,9 @@
     }
   ],
   "require": {
-    "php": ">=8.3"
+    "php": ">=8.3",
+    "alleyinteractive/wordpress-fieldmanager": "^1.6",
+    "wpackagist-plugin/wordpress-seo": "^23.9"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
