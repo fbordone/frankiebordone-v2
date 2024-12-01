@@ -1,6 +1,6 @@
 {
-  "$schema": "https://schemas.wp.org/wp/6.2/theme.json",
-  "version": 2,
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
   "settings": {
     "color": {
       "defaultPalette": false,
@@ -12,7 +12,38 @@
       "duotone": [],
       "gradients": [],
       "link": false,
-      "palette": []
+      "palette": [
+        {
+          "slug": "black",
+          "color": "#000000",
+          "name": "Black"
+        },
+        {
+          "slug": "white",
+          "color": "#FFFFFF",
+          "name": "White"
+        },
+        {
+          "slug": "off-white",
+          "color": "#F6F3FC",
+          "name": "Off White"
+        },
+        {
+          "slug": "purple-700",
+          "color": "#0F0715",
+          "name": "Purple 700"
+        },
+        {
+          "slug": "purple-500",
+          "color": "#8750F0",
+          "name": "Purple 500"
+        },
+        {
+          "slug": "purple-300",
+          "color": "#C7A6FF",
+          "name": "Purple 300"
+        }
+      ]
     },
     "custom": {},
     "layout": {
@@ -21,8 +52,7 @@
     },
     "spacing": {
       "margin": false,
-      "padding": false,
-      "units": []
+      "padding": false
     },
     "typography": {
       "customFontSize": false,
