@@ -131,7 +131,89 @@
       "customFontSize": false,
       "lineHeight": false,
       "dropCap": false,
-      "fontSizes": []
+      "fontSizes": [
+        {
+          "slug": "small",
+          "size": "0.875rem",
+          "fluid": {
+            "min": "0.75rem",
+            "max": "0.875rem"
+          },
+          "name": "Small"
+        },
+        {
+          "slug": "normal",
+          "size": "1rem",
+          "fluid": {
+            "min": "0.875rem",
+            "max": "1rem"
+          },
+          "name": "Normal"
+        },
+        {
+          "slug": "large",
+          "size": "1.25rem",
+          "fluid": {
+            "min": "1rem",
+            "max": "1.25rem"
+          },
+          "name": "Large"
+        },
+        {
+          "slug": "x-large",
+          "size": "1.5rem",
+          "fluid": {
+            "min": "1.25rem",
+            "max": "1.5rem"
+          },
+          "name": "X-Large"
+        },
+        {
+          "slug": "xx-large",
+          "size": "1.625rem",
+          "fluid": {
+            "min": "1.5rem",
+            "max": "1.625rem"
+          },
+          "name": "XX-Large"
+        },
+        {
+          "slug": "xxx-large",
+          "size": "2rem",
+          "fluid": {
+            "min": "1.625rem",
+            "max": "2rem"
+          },
+          "name": "XXX-Large"
+        },
+        {
+          "slug": "xxxx-large",
+          "size": "2.5rem",
+          "fluid": {
+            "min": "2rem",
+            "max": "2.5rem"
+          },
+          "name": "XXXX-Large"
+        },
+        {
+          "slug": "display-md",
+          "size": "4.5rem",
+          "fluid": {
+            "min": "3rem",
+            "max": "4.5rem"
+          },
+          "name": "Display Medium"
+        },
+        {
+          "slug": "display-lg",
+          "size": "6.25rem",
+          "fluid": {
+            "min": "3.5rem",
+            "max": "6.25rem"
+          },
+          "name": "Display Large"
+        }
+      ]
     },
     "blocks": {
       "core/button": {
