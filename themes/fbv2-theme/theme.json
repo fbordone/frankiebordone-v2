@@ -47,12 +47,85 @@
     },
     "custom": {},
     "layout": {
-      "contentSize": "800px",
-      "wideSize": "1000px"
+      "contentSize": "1280px",
+      "wideSize": "1350px"
     },
     "spacing": {
+      "blockGap": true,
       "margin": false,
-      "padding": false
+      "padding": false,
+      "spacingSizes": [
+        {
+          "size": "clamp(0.25rem, 0.0521rem + 0.5277vw, 0.5rem)",
+          "slug": "8",
+          "name": "8px"
+        },
+        {
+          "size": "clamp(0.375rem, 0.0782rem + 0.7916vw, 0.75rem)",
+          "slug": "12",
+          "name": "12px"
+        },
+        {
+          "size": "clamp(0.5rem, 0.1042rem + 1.0554vw, 1rem)",
+          "slug": "16",
+          "name": "16px"
+        },
+        {
+          "size": "clamp(0.75rem, 0.1563rem + 1.5831vw, 1.5rem)",
+          "slug": "24",
+          "name": "24px"
+        },
+        {
+          "size": "clamp(1rem, 0.2084rem + 2.1108vw, 2rem)",
+          "slug": "32",
+          "name": "32px"
+        },
+        {
+          "size": "clamp(1.25rem, 0.2606rem + 2.6385vw, 2.5rem)",
+          "slug": "40",
+          "name": "40px"
+        },
+        {
+          "size": "clamp(1.5rem, 0.3127rem + 3.1662vw, 3rem)",
+          "slug": "48",
+          "name": "48px"
+        },
+        {
+          "size": "clamp(1.75rem, 0.3648rem + 3.6939vw, 3.5rem)",
+          "slug": "56",
+          "name": "56px"
+        },
+        {
+          "size": "clamp(2rem, 0.4169rem + 4.2216vw, 4rem)",
+          "slug": "64",
+          "name": "64px"
+        },
+        {
+          "size": "clamp(2.25rem, 0.469rem + 4.7493vw, 4.5rem)",
+          "slug": "72",
+          "name": "72px"
+        },
+        {
+          "size": "clamp(2.5rem, 0.5211rem + 5.277vw, 5rem)",
+          "slug": "80",
+          "name": "80px"
+        },
+        {
+          "size": "clamp(2.75rem, 0.5732rem + 5.8047vw, 5.5rem)",
+          "slug": "88",
+          "name": "88px"
+        },
+        {
+          "size": "clamp(3rem, 0.6253rem + 6.3325vw, 6rem)",
+          "slug": "96",
+          "name": "96px"
+        },
+        {
+          "size": "clamp(3.25rem, 0.6774rem + 6.8602vw, 6.5rem)",
+          "slug": "104",
+          "name": "104px"
+        }
+      ]
     },
     "typography": {
       "customFontSize": false,
