@@ -4,93 +4,46 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da31871240e28de58f7b0ee2c257aa9f",
-    "packages": [],
-    "packages-dev": [
+    "content-hash": "fb17f9a9818cfb086ecad1cd9e9f2ce9",
+    "packages": [
         {
-            "name": "10up/phpcs-composer",
-            "version": "3.0.0",
+            "name": "alleyinteractive/wordpress-fieldmanager",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/10up/phpcs-composer.git",
-                "reference": "04fe5f0d61948f9e38e9cd037a5ee50dcdbf4688"
+                "url": "https://github.com/alleyinteractive/wordpress-fieldmanager.git",
+                "reference": "9e756e67f5264ac05f487992195f4dce99f83f56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/10up/phpcs-composer/zipball/04fe5f0d61948f9e38e9cd037a5ee50dcdbf4688",
-                "reference": "04fe5f0d61948f9e38e9cd037a5ee50dcdbf4688",
+                "url": "https://api.github.com/repos/alleyinteractive/wordpress-fieldmanager/zipball/9e756e67f5264ac05f487992195f4dce99f83f56",
+                "reference": "9e756e67f5264ac05f487992195f4dce99f83f56",
                 "shasum": ""
             },
             "require": {
-                "automattic/vipwpcs": "^3.0",
-                "phpcompatibility/phpcompatibility-wp": "^2"
+                "composer/installers": "^1.0 || ^2.0"
             },
             "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "*",
-                "phpcompatibility/php-compatibility": "dev-develop as 9.99.99"
+                "alleyinteractive/alley-coding-standards": "^0.3.0",
+                "yoast/phpunit-polyfills": "^1.0"
             },
-            "type": "phpcodesniffer-standard",
+            "type": "wordpress-plugin",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "10up",
-                    "homepage": "https://10up.com/"
+                    "name": "Alley Interactive",
+                    "email": "info@alley.com"
                 }
             ],
-            "description": "10up's PHP CodeSniffer Ruleset",
-            "time": "2023-12-14T15:37:22+00:00"
-        },
-        {
-            "name": "automattic/vipwpcs",
-            "version": "3.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Automattic/VIP-Coding-Standards.git",
-                "reference": "2b1d206d81b74ed999023cffd924f862ff2753c8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/VIP-Coding-Standards/zipball/2b1d206d81b74ed999023cffd924f862ff2753c8",
-                "reference": "2b1d206d81b74ed999023cffd924f862ff2753c8",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4",
-                "phpcsstandards/phpcsextra": "^1.2.1",
-                "phpcsstandards/phpcsutils": "^1.0.11",
-                "sirbrillig/phpcs-variable-analysis": "^2.11.18",
-                "squizlabs/php_codesniffer": "^3.9.2",
-                "wp-coding-standards/wpcs": "^3.1.0"
-            },
-            "require-dev": {
-                "php-parallel-lint/php-console-highlighter": "^1.0.0",
-                "php-parallel-lint/php-parallel-lint": "^1.3.2",
-                "phpcompatibility/php-compatibility": "^9",
-                "phpcsstandards/phpcsdevtools": "^1.0",
-                "phpunit/phpunit": "^4 || ^5 || ^6 || ^7 || ^8 || ^9"
-            },
-            "type": "phpcodesniffer-standard",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Contributors",
-                    "homepage": "https://github.com/Automattic/VIP-Coding-Standards/graphs/contributors"
-                }
-            ],
-            "description": "PHP_CodeSniffer rules (sniffs) to enforce WordPress VIP minimum coding conventions",
+            "description": "A library to build forms and admin screens for WordPress",
             "keywords": [
-                "phpcs",
-                "standards",
-                "static analysis",
+                "plugin",
                 "wordpress"
             ],
-            "time": "2024-05-10T20:31:09+00:00"
+            "time": "2024-05-06T12:57:12+00:00"
         },
         {
             "name": "composer/installers",
@@ -233,6 +186,111 @@
                 }
             ],
             "time": "2024-06-24T20:46:46+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "23.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/23.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.23.9.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "10up/phpcs-composer",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/10up/phpcs-composer.git",
+                "reference": "04fe5f0d61948f9e38e9cd037a5ee50dcdbf4688"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/10up/phpcs-composer/zipball/04fe5f0d61948f9e38e9cd037a5ee50dcdbf4688",
+                "reference": "04fe5f0d61948f9e38e9cd037a5ee50dcdbf4688",
+                "shasum": ""
+            },
+            "require": {
+                "automattic/vipwpcs": "^3.0",
+                "phpcompatibility/phpcompatibility-wp": "^2"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "*",
+                "phpcompatibility/php-compatibility": "dev-develop as 9.99.99"
+            },
+            "type": "phpcodesniffer-standard",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "10up",
+                    "homepage": "https://10up.com/"
+                }
+            ],
+            "description": "10up's PHP CodeSniffer Ruleset",
+            "time": "2023-12-14T15:37:22+00:00"
+        },
+        {
+            "name": "automattic/vipwpcs",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Automattic/VIP-Coding-Standards.git",
+                "reference": "2b1d206d81b74ed999023cffd924f862ff2753c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Automattic/VIP-Coding-Standards/zipball/2b1d206d81b74ed999023cffd924f862ff2753c8",
+                "reference": "2b1d206d81b74ed999023cffd924f862ff2753c8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "phpcsstandards/phpcsextra": "^1.2.1",
+                "phpcsstandards/phpcsutils": "^1.0.11",
+                "sirbrillig/phpcs-variable-analysis": "^2.11.18",
+                "squizlabs/php_codesniffer": "^3.9.2",
+                "wp-coding-standards/wpcs": "^3.1.0"
+            },
+            "require-dev": {
+                "php-parallel-lint/php-console-highlighter": "^1.0.0",
+                "php-parallel-lint/php-parallel-lint": "^1.3.2",
+                "phpcompatibility/php-compatibility": "^9",
+                "phpcsstandards/phpcsdevtools": "^1.0",
+                "phpunit/phpunit": "^4 || ^5 || ^6 || ^7 || ^8 || ^9"
+            },
+            "type": "phpcodesniffer-standard",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/Automattic/VIP-Coding-Standards/graphs/contributors"
+                }
+            ],
+            "description": "PHP_CodeSniffer rules (sniffs) to enforce WordPress VIP minimum coding conventions",
+            "keywords": [
+                "phpcs",
+                "standards",
+                "static analysis",
+                "wordpress"
+            ],
+            "time": "2024-05-10T20:31:09+00:00"
         },
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
