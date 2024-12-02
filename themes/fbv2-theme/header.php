@@ -16,8 +16,10 @@
 	<body <?php body_class(); ?>>
 		<?php wp_body_open(); ?>
 
-		<a href="#main" class="skip-to-content-link visually-hidden-focusable"><?php esc_html_e( 'Skip to main content', 'fbv2-theme' ); ?></a>
+		<nav aria-label="Skip links">
+			<a href="#main" class="skip-to-content-link visually-hidden-focusable"><?php esc_html_e( 'Skip to main content', 'fbv2-theme' ); ?></a>
+		</nav>
+
+		<?php get_template_part( 'partials/site-header' ); ?>
 
 		<main id="main" role="main" tabindex="-1">
-
-			<h1><?php bloginfo( 'name' ); ?></h1>

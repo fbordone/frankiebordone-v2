@@ -103,7 +103,7 @@ function theme_setup() {
 	// This theme uses wp_nav_menu() in three locations.
 	register_nav_menus(
 		array(
-			'primary' => esc_html__( 'Primary Menu', 'fbv2-theme' ),
+			'header-navigation' => esc_html__( 'Header Navigation', 'fbv2-theme' ),
 		)
 	);
 }
