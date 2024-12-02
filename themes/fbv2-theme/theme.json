@@ -19,23 +19,28 @@
           "name": "Black"
         },
         {
+          "slug": "black-700",
+          "color": "#050709",
+          "name": "Black 700"
+        },
+        {
           "slug": "white",
           "color": "#FFFFFF",
           "name": "White"
         },
         {
-          "slug": "off-white",
-          "color": "#F6F3FC",
-          "name": "Off White"
+          "slug": "purple-900",
+          "color": "#0F0715",
+          "name": "Purple 900"
         },
         {
           "slug": "purple-700",
-          "color": "#0F0715",
+          "color": "#140C1C",
           "name": "Purple 700"
         },
         {
           "slug": "purple-500",
-          "color": "#8750F0",
+          "color": "#8750F7",
           "name": "Purple 500"
         },
         {
