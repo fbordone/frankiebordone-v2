@@ -19,6 +19,11 @@
           "name": "Black"
         },
         {
+          "slug": "black-700",
+          "color": "#050709",
+          "name": "Black"
+        },
+        {
           "slug": "white",
           "color": "#FFFFFF",
           "name": "White"
