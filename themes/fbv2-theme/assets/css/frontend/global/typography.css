@@ -1,0 +1,8 @@
+:root {
+	--font-line-height-sm: 1;
+	--font-line-height-md: 1.1;
+	--font-line-height-lg: 1.4;
+	--font-weight-normal: 400;
+	--font-weight-semibold: 600;
+	--font-weight-bold: 700;
+}
