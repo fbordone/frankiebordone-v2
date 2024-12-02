@@ -1,5 +1,5 @@
 .visually-hidden,
-.visually-hidden-focusable:not(:focus):not(:active) {
+.visually-hidden-focusable:not(:focus):not(:active) { /* stylelint-disable-line */
 	border: 0;
 	clip: rect(1px, 1px, 1px, 1px);
 	clip-path: inset(50%);
@@ -10,4 +10,20 @@
 	position: absolute;
 	width: 1px;
 	word-wrap: normal !important;
+}
+
+/* Inline Padding */
+.padding-inline {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+
+	@media (--bp-medium) {
+		padding-left: 3.5rem;
+		padding-right: 3.5rem;
+	}
+
+	@media (--bp-large) {
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
 }
