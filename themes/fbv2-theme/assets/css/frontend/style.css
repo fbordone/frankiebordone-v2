@@ -21,8 +21,7 @@
 @import url("base/index.css");
 
 /* Layout - styles specific to layout */
-
-/* @import url("layout/index.css"); */
+@import url("layout/index.css");
 
 /* Templates */
 

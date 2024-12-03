@@ -6,3 +6,11 @@
 	--font-weight-semibold: 600;
 	--font-weight-bold: 700;
 }
+
+p.is-sm {
+	font-size: var(--wp--preset--font-size--small);
+}
+
+p.is-lg {
+	font-size: var(--wp--preset--font-size--large);
+}
