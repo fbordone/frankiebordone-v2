@@ -39,6 +39,11 @@
           "name": "Purple 700"
         },
         {
+          "slug": "purple-600",
+          "color": "#2A1454",
+          "name": "Purple 600"
+        },
+        {
           "slug": "purple-500",
           "color": "#8750F7",
           "name": "Purple 500"
@@ -322,10 +327,10 @@
         },
         "spacing": {
           "padding": {
-            "top": "var(--wp--preset--spacing--fixed-12)",
-            "right": "var(--wp--preset--spacing--fixed-36)",
-            "bottom": "var(--wp--preset--spacing--fixed-12)",
-            "left": "var(--wp--preset--spacing--fixed-36)"
+            "top": "13px",
+            "right": "33px",
+            "bottom": "13px",
+            "left": "33px"
           }
         },
         "typography": {
