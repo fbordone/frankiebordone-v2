@@ -1,0 +1,46 @@
+.site-header__desktop-nav > .menu-header-navigation-container {
+	display: none;
+
+	@media (--bp-large) {
+		display: block;
+	}
+}
+
+.site-header__navigation-toggle {
+	align-items: center;
+	background-color: transparent;
+	border: 0;
+	color: var(--wp--preset--color--white);
+	cursor: pointer;
+	display: flex;
+	font-size: 1rem;
+	justify-content: center;
+	padding-inline: 0;
+	z-index: 1000;
+
+	@media (--bp-large) {
+		display: none;
+	}
+
+	&::after {
+		background-color: var(--wp--preset--color--purple-500);
+		content: "";
+		display: block;
+		height: 1.3rem;
+		mask-image: url("../svg/menu.svg");
+		mask-position: center;
+		mask-repeat: no-repeat;
+		mask-size: contain;
+		width: 1.3rem;
+	}
+
+	&[aria-expanded="true"]::after {
+		height: 1.5rem;
+		mask-image: url("../svg/close.svg");
+		width: 1.5rem;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
