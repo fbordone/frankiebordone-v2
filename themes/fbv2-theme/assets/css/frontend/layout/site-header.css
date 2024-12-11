@@ -1,9 +1,11 @@
 .site-header {
 	background-color: var(--wp--preset--color--black-700);
+	box-shadow: 0 4px 15px rgba(135, 80, 240, 0.3); /* stylelint-disable-line */
 	height: 60px;
 	left: 0;
 	position: fixed;
 	top: 0;
+	transition: height 0.3s ease;
 	width: 100%;
 	z-index: 10;
 

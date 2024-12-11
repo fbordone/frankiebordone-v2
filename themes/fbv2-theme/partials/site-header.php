@@ -10,17 +10,14 @@
 <header class="site-header">
 	<div class="site-header__container padding-inline">
 		<div class="container">
-			<!-- Mobile logo -->
-			<h2 class="site-header__logo site-header__logo-mobile">
+			<h1 class="site-header__logo site-header__logo-mobile">
 				<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?> Home">
 					<?php esc_html_e( 'Frankie Bordone', 'fbv2-theme' ); ?>
 				</a>
-			</h2>
+			</h1>
 
-			<!-- Hamburger button (mobile) -->
 			<button class="site-header__navigation-toggle"></button>
 
-			<!-- Mobile nav -->
 			<nav class="site-header__nav-mobile">
 				<?php
 					wp_nav_menu(
@@ -34,16 +31,13 @@
 					?>
 			</nav>
 
-			<!-- Desktop nav -->
 			<nav class="site-header__nav-desktop">
-				<!-- Desktop logo -->
-				<h2 class="site-header__logo site-header__logo-desktop">
+				<h1 class="site-header__logo site-header__logo-desktop">
 					<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?> Home">
 						<?php esc_html_e( 'Frankie Bordone', 'fbv2-theme' ); ?>
 					</a>
-				</h2>
+				</h1>
 
-				<!-- Desktop nav -->
 				<?php
 					wp_nav_menu(
 						[
