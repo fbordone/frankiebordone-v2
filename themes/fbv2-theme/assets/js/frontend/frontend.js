@@ -1,3 +1,8 @@
 import '../../css/frontend/style.css';
 
-// import foo from './components/bar';
+import Navigation from './components/navigation';
+
+document.addEventListener('DOMContentLoaded', () => {
+	// Navigation
+	Navigation();
+});
