@@ -2,7 +2,7 @@
 /**
  * The partial for the site header.
  *
- * @package Cpl
+ * @package Fbv2Theme
  */
 
 ?>
