@@ -104,6 +104,7 @@ function theme_setup() {
 	register_nav_menus(
 		array(
 			'header-navigation' => esc_html__( 'Header Navigation', 'fbv2-theme' ),
+			'footer-navigation' => esc_html__( 'Footer Navigation', 'fbv2-theme' ),
 		)
 	);
 }
