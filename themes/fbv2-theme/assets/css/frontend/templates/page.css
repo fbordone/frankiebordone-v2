@@ -3,11 +3,6 @@
 	padding-top: 0;
 }
 
-/* .page__content > p,
-.page__content > li {
-	font-size: var(--wp--preset--font-size--large);
-} */
-
 .page__content a {
 	word-break: break-word;
 }

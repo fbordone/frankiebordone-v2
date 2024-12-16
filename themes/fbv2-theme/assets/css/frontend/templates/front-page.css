@@ -1,0 +1,33 @@
+.home .hero-eyebrow {
+	font-size: 22px;
+
+	@media (--bp-medium) {
+		font-size: 25px;
+	}
+
+	@media (--bp-large) {
+		font-size: 36px;
+	}
+}
+
+.home .hero-title {
+	font-size: 30px;
+	margin-top: 7px;
+
+	@media (--bp-large) {
+		font-size: 50px;
+		margin-top: 10px;
+	}
+
+	@media (--bp-xlarge) {
+		font-size: 65px;
+		margin-top: 20px;
+	}
+}
+
+.home .hero-description {
+
+	@media (--bp-large) {
+		margin-bottom: 40px;
+	}
+}
