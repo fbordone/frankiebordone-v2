@@ -303,16 +303,25 @@
         {
           "slug": "fixed-12",
           "size": "12px",
+          "fluid": false,
           "name": "12px (Fixed)"
         },
         {
           "slug": "fixed-16",
           "size": "16px",
+          "fluid": false,
           "name": "16px (Fixed)"
+        },
+        {
+          "slug": "fixed-20",
+          "size": "20px",
+          "fluid": false,
+          "name": "20px (Fixed)"
         },
         {
           "slug": "fixed-24",
           "size": "24px",
+          "fluid": false,
           "name": "24px (Fixed)"
         }
       ]
