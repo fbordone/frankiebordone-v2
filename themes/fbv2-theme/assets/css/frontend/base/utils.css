@@ -1,3 +1,13 @@
+:root {
+	--scrollbar-width: 0px; /* stylelint-disable-line */
+	--screen-width: calc(100vw - var(--scrollbar-width, 0px));
+	--scroll-margin-top: 1rem;
+
+	@media (--bp-medium) {
+		--scrollbar-width: 15px;
+	}
+}
+
 .visually-hidden,
 .visually-hidden-focusable:not(:focus):not(:active) { /* stylelint-disable-line */
 	border: 0;
@@ -16,6 +26,66 @@
 .padding-inline {
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
+
+	@media (--bp-medium) {
+		padding-left: 3.5rem;
+		padding-right: 3.5rem;
+	}
+
+	@media (--bp-large) {
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+}
+
+/* Content Flow */
+.content-flow {
+	padding-bottom: 1.5rem;
+	padding-top: 2rem;
+
+	@media (--bp-medium) {
+		padding-bottom: 5rem;
+		padding-top: 5rem;
+	}
+}
+
+.content-flow > * {
+	margin-block: 2rem 0;
+
+	@media (--bp-medium) {
+		margin-block: 2.5rem 0;
+	}
+
+	&:first-child {
+		margin-block-start: 0;
+	}
+}
+
+.content-flow > *:not(.wp-block-separator):is(h1, h2, h3, h4, h5, h6) + * {
+	margin-block-start: 1rem;
+
+	@media (--bp-medium) {
+		margin-block-start: 1.5rem;
+	}
+}
+
+.content-flow > *:not(.alignwide, .alignfull) {
+	box-sizing: content-box;
+	margin-inline: auto;
+	max-width: 840px;
+}
+
+.content-flow > .alignwide {
+	margin-inline: auto;
+	max-width: 1080px;
+}
+
+.content-flow > .alignfull {
+	margin-inline: calc(50% - var(--screen-width) / 2);
+	max-width: var(--screen-width);
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	width: var(--screen-width);
 
 	@media (--bp-medium) {
 		padding-left: 3.5rem;

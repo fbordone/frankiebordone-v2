@@ -1,0 +1,5 @@
+.wp-block-heading.is-style-purple-gradient {
+	background-clip: text;
+	background-image: linear-gradient(to right, #8750f0 0%, #fff 100%);
+	-webkit-text-fill-color: transparent;
+}

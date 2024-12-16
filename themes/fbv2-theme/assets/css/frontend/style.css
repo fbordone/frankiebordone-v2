@@ -24,8 +24,7 @@
 @import url("layout/index.css");
 
 /* Templates */
-
-/* @import url("templates/index.css"); */
+@import url("templates/index.css");
 
 /* Components */
 @import url("components/index.css");

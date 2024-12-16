@@ -1,0 +1,8 @@
+.page__content {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+.page__content a {
+	word-break: break-word;
+}
