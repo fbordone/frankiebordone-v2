@@ -19,7 +19,7 @@
 
 .site-footer__credits {
 	color: var(--wp--preset--color--purple-500);
-	font-size: 12px;
+	font-size: var(--wp--preset--font-size--fixed-12);
 	margin-bottom: 0;
 	margin-top: 10px;
 

@@ -29,19 +29,9 @@
           "name": "White"
         },
         {
-          "slug": "purple-900",
-          "color": "#0F0715",
-          "name": "Purple 900"
-        },
-        {
-          "slug": "purple-700",
-          "color": "#140C1C",
-          "name": "Purple 700"
-        },
-        {
-          "slug": "purple-600",
-          "color": "#2A1454",
-          "name": "Purple 600"
+          "slug": "purple-300",
+          "color": "#C7A6FF",
+          "name": "Purple 300"
         },
         {
           "slug": "purple-500",
@@ -49,9 +39,19 @@
           "name": "Purple 500"
         },
         {
-          "slug": "purple-300",
-          "color": "#C7A6FF",
-          "name": "Purple 300"
+          "slug": "purple-600",
+          "color": "#2A1454",
+          "name": "Purple 600"
+        },
+        {
+          "slug": "purple-700",
+          "color": "#140C1C",
+          "name": "Purple 700"
+        },
+        {
+          "slug": "purple-900",
+          "color": "#0F0715",
+          "name": "Purple 900"
         }
       ]
     },
@@ -66,109 +66,24 @@
       "padding": false,
       "spacingSizes": [
         {
-          "size": "clamp(0.25rem, 0.0521rem + 0.5277vw, 0.5rem)",
-          "slug": "fluid-8",
-          "name": "8px (Fluid)"
-        },
-        {
-          "size": "clamp(0.5rem, 0.1042rem + 1.0554vw, 1rem)",
-          "slug": "fluid-16",
-          "name": "16px (Fluid)"
-        },
-        {
-          "size": "clamp(0.75rem, 0.1563rem + 1.5831vw, 1.5rem)",
-          "slug": "fluid-24",
-          "name": "24px (Fluid)"
-        },
-        {
-          "size": "clamp(1rem, 0.2084rem + 2.1108vw, 2rem)",
-          "slug": "fluid-32",
-          "name": "32px (Fluid)"
-        },
-        {
-          "size": "clamp(1.25rem, 0.2606rem + 2.6385vw, 2.5rem)",
-          "slug": "fluid-40",
-          "name": "40px (Fluid)"
-        },
-         {
-          "size": "clamp(1.5rem, 0.3127rem + 3.1662vw, 3rem)",
-          "slug": "48",
-          "name": "48px (Fluid)"
-        },
-        {
           "size": "clamp(1.75rem, 0.3648rem + 3.6939vw, 3.5rem)",
-          "slug": "56",
+          "slug": "fluid-56",
           "name": "56px (Fluid)"
         },
         {
-          "size": "clamp(2rem, 0.4169rem + 4.2216vw, 4rem)",
-          "slug": "64",
-          "name": "64px (Fluid)"
-        },
-        {
           "size": "clamp(2.25rem, 0.469rem + 4.7493vw, 4.5rem)",
-          "slug": "72",
+          "slug": "fluid-72",
           "name": "72px (Fluid)"
         },
         {
-          "size": "clamp(2.5rem, 0.5211rem + 5.277vw, 5rem)",
-          "slug": "80",
-          "name": "80px (Fluid)"
-        },
-        {
-          "size": "clamp(2.75rem, 0.5732rem + 5.8047vw, 5.5rem)",
-          "slug": "88",
-          "name": "88px (Fluid)"
-        },
-        {
-          "size": "clamp(3rem, 0.6253rem + 6.3325vw, 6rem)",
-          "slug": "96",
-          "name": "96px (Fluid)"
-        },
-        {
-          "size": "clamp(3.25rem, 0.6774rem + 6.8602vw, 6.5rem)",
-          "slug": "104",
-          "name": "104px (Fluid)"
-        },
-        {
-          "size": "clamp(3.5rem, 0.729rem + 7.386vw, 7rem)",
-          "slug": "112",
-          "name": "112px (Fluid)"
-        },
-        {
           "size": "clamp(3.75rem, 0.781rem + 7.912vw, 7.5rem)",
-          "slug": "120",
+          "slug": "fluid-120",
           "name": "120px (Fluid)"
         },
         {
-          "size": "clamp(4rem, 0.833rem + 8.438vw, 8rem)",
-          "slug": "128",
-          "name": "128px (Fluid)"
-        },
-        {
           "size": "clamp(5.5rem, 1.146rem + 11.594vw, 11rem)",
-          "slug": "176",
+          "slug": "fluid-176",
           "name": "176px (Fluid)"
-        },
-        {
-          "size": "8px",
-          "slug": "fixed-8",
-          "name": "8px (Fixed)"
-        },
-        {
-          "size": "12px",
-          "slug": "fixed-12",
-          "name": "12px (Fixed)"
-        },
-        {
-          "size": "16px",
-          "slug": "fixed-16",
-          "name": "16px (Fixed)"
-        },
-        {
-          "size": "36px",
-          "slug": "fixed-36",
-          "name": "36px (Fixed)"
         }
       ]
     },
@@ -311,6 +226,12 @@
           "size": "16px",
           "fluid": false,
           "name": "16px (Fixed)"
+        },
+        {
+          "slug": "fixed-18",
+          "size": "18px",
+          "fluid": false,
+          "name": "18px (Fixed)"
         },
         {
           "slug": "fixed-20",
