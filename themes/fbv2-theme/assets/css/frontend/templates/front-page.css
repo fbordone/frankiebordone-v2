@@ -1,3 +1,18 @@
+.home .section-header {
+	max-width: 800px;
+}
+
+.home .section-header h2 {
+
+	@media (--bp-large) {
+		font-size: 40px;
+	}
+
+	@media (--bp-xlarge) {
+		font-size: 45px;
+	}
+}
+
 .home .hero-eyebrow {
 	font-size: 22px;
 
