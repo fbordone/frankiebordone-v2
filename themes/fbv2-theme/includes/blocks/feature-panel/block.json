@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "title": "Feature Panel",
+  "description": "A flexible and visually engaging block designed to showcase key services.",
+  "textdomain": "fbv2-theme",
+  "name": "fbv2-theme/feature-panel",
+  "icon": "layout",
+  "category": "design",
+  "attributes":{
+    "numberPanel": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css",
+  "render": "file:./markup.php"
+}

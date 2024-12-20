@@ -1,3 +1,29 @@
+.home .section-header {
+	max-width: 800px;
+}
+
+.home .section-header h2 {
+
+	@media (--bp-large) {
+		font-size: 40px;
+	}
+
+	@media (--bp-xlarge) {
+		font-size: 45px;
+	}
+}
+
+.home .section-header p {
+	margin-top: 12px;
+}
+
+.home .hero-left-col {
+
+	@media (--bp-xxlarge) {
+		padding-left: 55px;
+	}
+}
+
 .home .hero-eyebrow {
 	font-size: 22px;
 

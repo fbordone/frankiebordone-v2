@@ -50,11 +50,6 @@
 }
 
 .content-flow > * {
-	margin-block: 2rem 0;
-
-	@media (--bp-medium) {
-		margin-block: 2.5rem 0;
-	}
 
 	&:first-child {
 		margin-block-start: 0;
