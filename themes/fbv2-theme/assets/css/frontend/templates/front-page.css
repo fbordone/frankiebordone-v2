@@ -13,6 +13,17 @@
 	}
 }
 
+.home .section-header p {
+	margin-top: 12px;
+}
+
+.home .hero-left-col {
+
+	@media (--bp-xxlarge) {
+		padding-left: 55px;
+	}
+}
+
 .home .hero-eyebrow {
 	font-size: 22px;
 
