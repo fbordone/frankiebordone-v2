@@ -1,6 +1,6 @@
 <?php
 /**
- * Demo Post Type
+ * Project Post Type
  *
  * @package Fbv2Plugin
  */
@@ -8,18 +8,16 @@
 namespace Fbv2Plugin\PostTypes;
 
 /**
- * Demo post type.
+ * Project post type.
  */
-class Demo extends AbstractPostType {
+class Project extends AbstractPostType {
 
 	/**
-	 * Get the post type name.
+	 * The CPT name.
 	 *
-	 * @return string
+	 * @var mixed
 	 */
-	public function get_name() {
-		return 'tenup-demo';
-	}
+	const CPT_NAME = 'fbv2_project';
 
 	/**
 	 * Get the singular post type label.
@@ -27,7 +25,7 @@ class Demo extends AbstractPostType {
 	 * @return string
 	 */
 	public function get_singular_label() {
-		return esc_html__( 'Demo', 'fbv2-plugin' );
+		return esc_html__( 'Project', 'fbv2-plugin' );
 	}
 
 	/**
@@ -36,7 +34,7 @@ class Demo extends AbstractPostType {
 	 * @return string
 	 */
 	public function get_plural_label() {
-		return esc_html__( 'Demos', 'fbv2-plugin' );
+		return esc_html__( 'Projects', 'fbv2-plugin' );
 	}
 
 	/**
@@ -49,7 +47,7 @@ class Demo extends AbstractPostType {
 	 * @return string
 	 */
 	public function get_menu_icon() {
-		return 'dashicons-chart-pie';
+		return 'dashicons-portfolio';
 	}
 
 	/**
@@ -58,7 +56,7 @@ class Demo extends AbstractPostType {
 	 * @return bool
 	 */
 	public function can_register() {
-		return false;
+		return true;
 	}
 
 	/**
@@ -68,9 +66,23 @@ class Demo extends AbstractPostType {
 	 * @return array
 	 */
 	public function get_supported_taxonomies() {
-		return [
-			'tenup-tax-demo',
+		return [];
+	}
+
+	/**
+	 * Default post type supported feature names.
+	 *
+	 * @return array
+	 */
+	public function get_editor_supports() {
+		$supports = [
+			'title',
+			'editor',
+			'excerpt',
+			'thumbnail',
 		];
+
+		return $supports;
 	}
 
 	/**
