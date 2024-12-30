@@ -86,6 +86,21 @@ class Project extends AbstractPostType {
 	}
 
 	/**
+	 * Get the options for the post type.
+	 *
+	 * @return array
+	 */
+	public function get_options() {
+		$cpt_options = [
+			'has_archive'        => false,
+			'publicly_queryable' => false,
+			'rewrite'            => false,
+		];
+
+		return array_merge( parent::get_options(), $cpt_options );
+	}
+
+	/**
 	 * Run any code after the post type has been registered.
 	 *
 	 * @return void
