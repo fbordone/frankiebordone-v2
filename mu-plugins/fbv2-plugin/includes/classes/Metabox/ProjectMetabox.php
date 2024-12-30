@@ -9,6 +9,7 @@ namespace Fbv2Plugin\Metabox;
 
 use Fbv2Plugin\Metabox\AbstractMetaBox;
 use Fbv2Plugin\PostTypes\Project;
+use Fbv2Plugin\Types\MetaKey;
 
 /**
  * ProjectMetabox class.
@@ -31,11 +32,11 @@ final class ProjectMetabox extends AbstractMetaBox {
 	 */
 	public function meta_box_fields(): array {
 		$fields = [
-			'external_link' => new \Fieldmanager_Link(
+			MetaKey::PROJECT_EXTERNAL_LINK => new \Fieldmanager_Link(
 				[
 					'label' => esc_html__( 'External Link', 'fbv2-plugin' ),
 				]
-			)
+			),
 		];
 
 		return $fields;
