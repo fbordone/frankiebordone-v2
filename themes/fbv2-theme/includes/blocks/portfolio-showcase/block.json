@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "title": "Portfolio Showcase",
+  "description": "A custom block to showcase featured projects with imagery and flexible layouts.",
+  "textdomain": "fbv2-theme",
+  "name": "fbv2-theme/portfolio-showcase",
+  "icon": "portfolio",
+  "category": "design",
+  "attributes":{},
+  "supports": {
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css",
+  "render": "file:./markup.php"
+}

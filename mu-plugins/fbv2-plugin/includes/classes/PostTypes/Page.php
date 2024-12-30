@@ -16,13 +16,11 @@ namespace Fbv2Plugin\PostTypes;
 class Page extends AbstractCorePostType {
 
 	/**
-	 * Get the post type name.
+	 * The CPT name.
 	 *
-	 * @return string
+	 * @var mixed
 	 */
-	public function get_name() {
-		return 'page';
-	}
+	const CPT_NAME = 'page';
 
 	/**
 	 * Returns the default supported taxonomies. The subclass should declare the

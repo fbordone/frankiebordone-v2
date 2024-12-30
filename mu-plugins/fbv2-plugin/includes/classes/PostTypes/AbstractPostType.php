@@ -40,11 +40,29 @@ use Fbv2Plugin\Module;
 abstract class AbstractPostType extends Module {
 
 	/**
+	 * The CPT name.
+	 *
+	 * @var mixed
+	 */
+	const CPT_NAME = self::CPT_NAME;
+
+	/**
 	 * Get the post type name.
 	 *
 	 * @return string
 	 */
-	abstract public function get_name();
+	public static function get_name(): string {
+		return static::CPT_NAME;
+	}
+
+	/**
+	 * Get the post type slug.
+	 *
+	 * @return string
+	 */
+	public static function get_slug(): string {
+		return sanitize_title( static::get_name() );
+	}
 
 	/**
 	 * Get the singular post type label.
