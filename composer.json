@@ -21,7 +21,7 @@
   "require": {
     "php": ">=8.3",
     "alleyinteractive/wordpress-fieldmanager": "^1.6",
-    "wpackagist-plugin/wordpress-seo": "^23.9",
+    "wpackagist-plugin/wordpress-seo": "^24.0",
     "wpackagist-plugin/safe-redirect-manager": "^2.2"
   },
   "minimum-stability": "dev",
