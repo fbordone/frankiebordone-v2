@@ -16,7 +16,7 @@ function Navigation() {
 	}
 
 	/**
-	 * Smooth scrolls to the target section.
+	 * Smooth scrolls to the target section (for both header and footer)
 	 *
 	 * @param {Event} event - The click event.
 	 */

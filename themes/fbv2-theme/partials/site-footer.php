@@ -17,6 +17,8 @@
 						'theme_location' => 'footer-navigation',
 						'menu_id'        => 'nav-footer',
 						'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+						'link_before'    => '<span data-scroll>',
+						'link_after'     => '</span>',
 					]
 				);
 				?>
