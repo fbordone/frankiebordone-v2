@@ -26,16 +26,16 @@ This project leverages [10up's WP Scaffold](https://github.com/10up/wp-scaffold)
 The website is designed as a single-page landing experience, utilizing both core WordPress blocks and custom-developed blocks to deliver a highly interactive and visually engaging layout.
 
 **Core Blocks:**
-- Group & Column: Used for foundational layout and section structuring.
-- Image: Enhanced with a custom "tilt" block style for the portrait in the "Hero" section.
-- Heading: Augmented with a custom purple gradient block style for key headers throughout the site.
+- `Group` & `Column`: Used for foundational layout and section structuring.
+- `Image`: Enhanced with a custom "tilt" block style for the portrait in the "Hero" section.
+- `Heading`: Augmented with a custom purple gradient block style for key headers throughout the site.
 
 **Custom Blocks:**
-- Feature Panel:
+- `Feature Panel`:
 	- Purpose: Showcases key services or offerings in a visually engaging format.
 	- Implementation: Built with `RichText` components for flexible content editing.
 	- Location: "About" section.
-- Portfolio Showcase:
+- `Portfolio Showcase`:
 	- Purpose: Highlights featured projects with imagery and adaptable layouts.
 	- Implementation: Uses `ServerSideRender` to dynamically pull data from a custom post type (`Projects`).
 	- Location: "Portfolio" section.
