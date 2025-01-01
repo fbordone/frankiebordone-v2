@@ -26,6 +26,8 @@
 							'theme_location' => 'header-navigation',
 							'menu_id'        => 'nav-header-mobile',
 							'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							'link_before'    => '<span data-scroll>',
+							'link_after'     => '</span>',
 						]
 					);
 					?>
@@ -45,6 +47,8 @@
 							'theme_location' => 'header-navigation',
 							'menu_id'        => 'nav-header-desktop',
 							'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							'link_before'    => '<span data-scroll>',
+							'link_after'     => '</span>',
 						]
 					);
 					?>
