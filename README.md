@@ -4,7 +4,7 @@ Welcome to the second iteration of [frankiebordone.com](https://frankiebordone.c
 
 The primary goal of v2 is to demonstrate expertise in building block-based WordPress experiences with Gutenberg while showcasing past projects and development skills.
 
-# Project Highlights
+## Project Highlights
 
 This project leverages [10up's WP Scaffold](https://github.com/10up/wp-scaffold) as the foundation for development, including:
 - A barebones theme for customization.
@@ -15,13 +15,13 @@ This project leverages [10up's WP Scaffold](https://github.com/10up/wp-scaffold)
 	- **Styles**: Supports PostCSS, SASS, and CSS Modules.
 	- **Code Quality Tools**: ESLint, Prettier, and Stylelint integration.
 
-# Project Specifications
+## Project Specifications
 
 - **Node.js**: v20
 - **PHP**: v8.3
 - **WordPress**: v6.7.1
 
-# Layout Overview
+## Layout Overview
 
 The website is designed as a single-page landing experience, utilizing both core WordPress blocks and custom-developed blocks to deliver a highly interactive and visually engaging layout.
 
@@ -40,7 +40,7 @@ The website is designed as a single-page landing experience, utilizing both core
 	- Implementation: Uses `ServerSideRender` to dynamically pull data from a custom post type (`Projects`).
 	- Location: "Portfolio" section.
 
-# Get in Touch
+## Get in Touch
 Feel free to explore this repository and reach out with any questions, feedback, or collaboration opportunities!
 - **Website**: [https://frankiebordone.com/](https://frankiebordone.com)
 - **LinkedIn**: [https://www.linkedin.com/in/francescobordone/](https://www.linkedin.com/in/francescobordone/)
