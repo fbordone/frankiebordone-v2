@@ -25,20 +25,29 @@ function Navigation() {
 
 		const anchor = event.target.closest('a');
 
-		if (anchor && anchor.getAttribute('href')) {
-			const targetId = anchor.getAttribute('href').slice(1);
-			const targetElement = document.getElementById(targetId);
+		if (!anchor) {
+			return;
+		}
 
-			if (targetElement) {
-				const headerHeight = header.offsetHeight;
-				const targetPosition =
-					targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+		const href = anchor.getAttribute('href');
 
-				window.scrollTo({
-					top: targetPosition,
-					behavior: 'smooth',
-				});
-			}
+		if (!href || !href.startsWith('#')) {
+			window.location.href = href;
+			return;
+		}
+
+		const targetId = href.slice(1);
+		const targetElement = document.getElementById(targetId);
+
+		if (targetElement) {
+			const headerHeight = header.offsetHeight;
+			const targetPosition =
+				targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+
+			window.scrollTo({
+				top: targetPosition,
+				behavior: 'smooth',
+			});
 		}
 
 		// Close the mobile menu if it's open
