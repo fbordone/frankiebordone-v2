@@ -47,3 +47,5 @@ themes/*/.npmrc
 # Dev & Tests
 sandbox
 
+# Claude Code
+CLAUDE.md
